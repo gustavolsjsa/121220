@@ -1,0 +1,236 @@
+html{
+font-size:62.5%;  
+/* normalizar para rems, 1 rem ahora es 10 px y a partiR de eso
+podemos usar 1 rem = 10px para el tamaño de imagenes y fuentes*/
+}
+body{
+    font-size:1.6 rem;
+    /* normalizar para rems, 1 rem ahora es 10 px y a partiR de eso
+podemos usar 1 rem = 10px para el tamaño de imagenes y fuentes*/
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+/*Principales */
+h1{
+    font-size:4rem;
+}
+h2{
+    font-size:3.6rem;
+}
+h3{
+    font-size:3rem;
+}
+h4{
+    font-size:2.6rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    }
+.espacio{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+.fw300{
+    font-weight: 300;                 
+}    
+.centrar-texto{
+    text-align: center;
+}
+img{
+    max-width:100%;
+    /* 100% de su contenedor */
+}
+.boton{
+color: white;
+text-decoration: none;
+padding: 1rem 3rem;
+display:inline-block;
+margin-top: 5rem;
+border-style: dotted double;
+border-radius: 3rem;
+}
+.boton-principal{
+background-color: green;
+}
+.boton-secundario{
+background-color: grey;
+}
+
+/* header */
+.site-header{
+    background-image: url(../images/principal01.jpg);
+    background-position: center center;
+    background-size: cover;  /* cubre todo el espacio disponible */
+    height: 100vh;
+    min-height: 40rem;
+}
+.contenido-header{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#slogan{
+    text-align: center;
+    text-shadow: -2rem -2rem .8rem gray;
+} 
+#slogan h1{
+    color: green;
+    margin-bottom: 0rem;
+} 
+#slogan h4{
+    margin-top: 0rem;
+}
+.barra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;                     
+    padding-top: 1rem;
+}
+
+/* Navegación */
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-family: Montserrat;
+    font-size: 2rem;
+    text-shadow: -2rem -2rem .8rem rgb(53, 53, 53);
+}
+.navegacion a:hover{
+    color:greenyellow;
+}
+.navegacion a:last-of-type{
+    margin: 0;
+}
+#logo{
+    max-height: 10rem;
+}
+
+/* Por que elegirnos */
+.elegirnos{
+    display: flex;
+    justify-content: space-between; /*justificado */
+}
+.razones{
+    flex-basis: calc(25% - 2rem); 
+    /* es el equivalente a width pero para FLEX */
+    text-align: center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+}
+.razones i{
+    font-size: 10rem;
+    color: green;
+    text-shadow: 1rem 1rem 1rem grey;
+}
+
+/* oferta de servicios */
+.oferta{
+    display: flex;
+    justify-content: space-between;
+}
+.servicio{
+    flex-basis: calc(25% - 2rem);
+    border-style: dotted;
+    border-color: lightcoral;
+    border-width: .5rem;
+    /* border: .5rem dotted lightgreen; */
+}
+.contenido-servicio{
+    /* esta es una sola clase */
+    
+    padding: 2rem;
+    text-align: right;
+
+    height: 40%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between; 
+}
+.contenido-servicio p, .contenido-servicio h3{
+    margin: 0;
+}
+
+.precio{
+    color:teal;
+    font-weight: 700;
+}
+/* Nuestros numeros */
+.imagen-contacto{
+    background-color: tomato;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.contenido-contacto{
+font-size: 2.6rem;
+}
+
+/* Sección inferior */
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 2rem);
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+} 
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a{
+    color:greenyellow;
+    text-decoration: none;
+}
+.texto-entrada h4{
+    margin: 0;
+}
+.texto-entrada h4::after{
+    /* pseudoselector que actua despues de un elemento */
+    content:"";
+    /* es necesario content aunque este vacio */
+    display:block;
+    width:100%;
+    height:.5rem;
+    background-color:tomato;
+}
+/* Testimoniales */
+.testimonial{
+    background-color:yellowgreen;
+    font-size:2.8rem;
+    padding: 6rem;
+    color: white;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    font-style: italic;
+}
+
+/* Footer */
+footer{
+    background-color: grey;
+    padding: 3rem;
+}
+    
