@@ -25,6 +25,7 @@ h3{
 }
 h4{
     font-size:2.6rem;
+    margin: 15px auto;
 }
 .contenedor{
     max-width: 120rem;
@@ -50,14 +51,17 @@ text-decoration: none;
 padding: 1rem 3rem;
 display:inline-block;
 margin-top: 5rem;
-border-style: dotted double;
 border-radius: 3rem;
 }
 .boton-principal{
-background-color: green;
+background-color: #41ff9a;
+display:inline;
+width:fit-content;
 }
 .boton-secundario{
-background-color: grey;
+margin-top: .05rem;
+background-color: #41ff9a;
+border-style: none;
 }
 
 /* header */
@@ -99,10 +103,9 @@ background-color: grey;
     margin-right: 2rem;
     font-family: Montserrat;
     font-size: 2rem;
-    text-shadow: -2rem -2rem .8rem rgb(53, 53, 53);
 }
 .navegacion a:hover{
-    color:greenyellow;
+    color:#41ff9a;
 }
 .navegacion a:last-of-type{
     margin: 0;
@@ -115,21 +118,22 @@ background-color: grey;
 .elegirnos{
     display: flex;
     justify-content: space-between; /*justificado */
+    background-color: #fffdea;
 }
 .razones{
     flex-basis: calc(25% - 2rem); 
     /* es el equivalente a width pero para FLEX */
     text-align: center;
-
     display:flex;
     flex-direction:column;
     justify-content: space-between;
     
 }
 .razones i{
-    font-size: 10rem;
-    color: green;
-    text-shadow: 1rem 1rem 1rem grey;
+    font-size: 8rem;
+    color: #41ff9a;
+    text-shadow: 1rem 1rem 1rem rgba(170, 170, 170, 0.739);
+    margin-top: 30px;
 }
 
 /* oferta de servicios */
@@ -138,18 +142,18 @@ background-color: grey;
     justify-content: space-between;
 }
 .servicio{
-    flex-basis: calc(25% - 2rem);
-    border-style: dotted;
+    flex-basis: calc(24% - 2rem);
+    border-style: solid;
     border-color: lightcoral;
-    border-width: .5rem;
+    border-width: .2rem;
+    border-radius: 2rem;
+    padding: 10px;
     /* border: .5rem dotted lightgreen; */
 }
 .contenido-servicio{
     /* esta es una sola clase */
-    
     padding: 2rem;
     text-align: right;
-
     height: 40%;
     display:flex;
     flex-direction:column;
@@ -158,7 +162,6 @@ background-color: grey;
 .contenido-servicio p, .contenido-servicio h3{
     margin: 0;
 }
-
 .precio{
     color:teal;
     font-weight: 700;
@@ -174,17 +177,28 @@ background-color: grey;
 .contenido-contacto{
 font-size: 2.6rem;
 }
+.contador{
+    background-color: #6347FF;
+    padding: 10px 30px;
+    border-radius: 3rem;
+}
 
 /* Sección inferior */
 .seccion-inferior{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .seccion-inferior .blog{
     flex-basis: 60%;
+    background-color: #fffdea;
+    padding: 0 30px;
+    margin-top: 30px;
 }
 .seccion-inferior .testimoniales{
     flex-basis: calc(40% - 2rem);
+    padding: 0 30px;
+    margin-top: 30px;
+
 }
 .entrada-blog{
     display: flex;
@@ -202,7 +216,7 @@ font-size: 2.6rem;
 }
 
 .texto-entrada a{
-    color:greenyellow;
+    color:#41ff9a;
     text-decoration: none;
 }
 .texto-entrada h4{
@@ -215,11 +229,11 @@ font-size: 2.6rem;
     display:block;
     width:100%;
     height:.5rem;
-    background-color:tomato;
+    background-color:#ff6347;
 }
 /* Testimoniales */
 .testimonial{
-    background-color:yellowgreen;
+    background-color:#41ff9a;
     font-size:2.8rem;
     padding: 6rem;
     color: white;
@@ -227,10 +241,24 @@ font-size: 2.6rem;
     border-bottom-left-radius: 5rem;
     font-style: italic;
 }
-
 /* Footer */
 footer{
     background-color: grey;
     padding: 3rem;
 }
+footer .redes{
     
+    background-color: grey;
+    padding-top: 2rem;
+    text-decoration: none;
+    margin-right: 2rem;
+    
+}
+.redes i{
+    color: white;
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+.redes i:hover{
+    color:#41ff9a;
+}
